@@ -1,0 +1,59 @@
+body {
+  background: linear-gradient(135deg, #4b96ed, #c06cc3);
+  font-family: 'Poppins', sans-serif;
+  margin-top: 60px;
+}
+
+.motivation-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.animated-quote {
+  font-weight: bold;
+  color: #333;
+  animation: bounceGlow 3s infinite;
+  font-size: 1.1rem;
+}
+
+@keyframes bounceGlow {
+  0%, 100% {
+    transform: translateY(0);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+  }
+  50% {
+    transform: translateY(-5px);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 1);
+  }
+}
+
+.todo-card {
+  max-width: 400px;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: fadeIn 1s ease;
+}
+
+#taskList li {
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+#taskList li:hover {
+  transform: scale(1.02);
+}
+
+.completed {
+  text-decoration: line-through;
+  background-color: #d4edda;
+}
